@@ -633,6 +633,94 @@ section {
   font-weight: 700;
   margin-bottom: 20px;
 }
+/*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+.portfolio {
+  padding: 60px 0;
+  background: #f5f8fd;
+}
+
+.portfolio .section-title {
+  padding-bottom: 30px;
+}
+
+.portfolio .section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #173b6c;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.portfolio .section-title h2::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #149ddd;
+  bottom: 0;
+  left: 0;
+}
+
+.portfolio .portfolio-item {
+  text-decoration: none;
+  color: #000;
+}
+
+.portfolio .portfolio-wrap {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.portfolio .portfolio-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.portfolio .portfolio-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info {
+  opacity: 1;
+}
+
+.portfolio .portfolio-info h4 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.portfolio .portfolio-info p {
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .portfolio .section-title h2 {
+    font-size: 28px;
+  }
+
+  .portfolio .portfolio-info h4 {
+    font-size: 16px;
+  }
+
+  .portfolio .portfolio-info p {
+    font-size: 12px;
+  }
+}
 
 .portfolio-details .portfolio-description p {
   padding: 0;
